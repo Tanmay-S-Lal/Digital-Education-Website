@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../Components/Styles/MatchingActivity.css';
 import { NAVBAR_ACTIVITY } from './NavBar';
 

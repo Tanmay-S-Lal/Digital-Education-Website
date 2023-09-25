@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { icons } from "react-icons";
 import { TiArrowSortedDown, TiArrowSortedUp} from "react-icons/ti";
 import {AiOutlineDownload} from "react-icons/ai";
 import bear from '../Images/Bear.png'
@@ -19,11 +18,11 @@ import kannada from '../Docs/Kannadascript.pdf'
 function Contentcontainer(props){
     const navigate = useNavigate();
 
-    const [isOpen,setIsOpen] = useState(false)
-    const [isOpen1,setIsOpen1] = useState(false)
-    const [isOpen2,setIsOpen2] = useState(false)
+    // const [isOpen,setIsOpen] = useState(false)
+    // const [isOpen1,setIsOpen1] = useState(false)
+    // const [isOpen2,setIsOpen2] = useState(false)
     const [isOpen3,setIsOpen3] = useState(false)
-    const [upbutton,setupbutton]=useState(<TiArrowSortedDown/>)
+    // const [upbutton,setupbutton]=useState(<TiArrowSortedDown/>)
     const [chapcont,setchapcont]=useState('CHAPTER 1: POONAM\'S DAY OUT')
     const [attributes,setattributes]=useState()
     
@@ -75,9 +74,9 @@ function Contentcontainer(props){
         
     }
 
-    function handleactivity(){
-        setchapcont('Activity')
-    }
+    // function handleactivity(){
+    //     setchapcont('Activity')
+    // }
 
     function handleCharts(){
 
