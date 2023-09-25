@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import '../Components/Styles/oneword.css'
 import questionsData from '../Components/jsons/one_word.json'
-// import { useSpeechSynthesis } from 'react-speech-kit';
+import { useSpeechSynthesis } from 'react-speech-kit';
 import clapping from "../Components/sounds/Quiz_CorrectClapping.mp3"
 import negative from "../Components/sounds/Quiz_WrongNegative.mp3"
 import { NAVBAR_QUIZ } from './NavBar';
 const Oneword = () => {
     const [givenAns, setGivenAns] = useState('');
     const [correct, setCorrect] = useState({});
-    // const { speak } = useSpeechSynthesis();
+    const { speak } = useSpeechSynthesis();
     const [submitted, setSubmitted] = useState(false);
     const [points, setPoints] = useState(0);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,8 +16,8 @@ const Oneword = () => {
     const [showThumbsDown, setShowThumbsDown] = useState(false);
     const [playClappingMusic, setPlayClappingMusic] = useState(false);
     const [playNegativeMusic, setPlayNegativeMusic] = useState(false);
-    // const speakCorrect = "That's right, you are correct";
-    // const isWrong = "Sorry, you are wrong";
+    const speakCorrect = "That's right, you are correct";
+    const isWrong = "Sorry, you are wrong";
     const handleChange = (e) => {
         setGivenAns(e.target.value)
     }
@@ -58,7 +58,7 @@ const Oneword = () => {
         if (userInput === correctAnswer) {
             console.log("true");
 
-            // speak({ text: speakCorrect });
+            speak({ text: speakCorrect });
             setCorrect(prevCorrect => ({
                 ...prevCorrect,
                 [param2]: true,
@@ -76,7 +76,7 @@ const Oneword = () => {
         else {
             console.log('false');
 
-            // speak({ text: isWrong });
+            speak({ text: isWrong });
             setCorrect(prevCorrect => ({
                 ...prevCorrect,
                 [param2]: false,
