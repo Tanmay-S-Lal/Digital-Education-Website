@@ -1,0 +1,47 @@
+body {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: deeppink;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 2px gray;
+    
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.navBar {
+    display: flex;
+    gap: 15px;
+    height: 30px;
+}
+
+.navBar a{
+    margin: 0;
+    padding-top: 3px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navBar a:hover {
+    text-decoration: underline solid 4px white;
+    transform: scale(1.2);
+}
+
+.navBar a.active {
+    text-decoration: underline solid 4px greenyellow;
+    color: greenyellow;
+}

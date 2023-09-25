@@ -1,0 +1,62 @@
+.App {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 20px;
+  min-width: 80vw;
+  min-height: 85vh;
+  background: url("https://img.freepik.com/premium-vector/bright-vector-city-park-with-playground_124507-57.jpg?w=1380") center/cover no-repeat border-box fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.column {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #f66a6a;
+  border-radius: 5px;
+  margin-block: 25px;
+  margin-inline: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#left-column {
+  width: 600px;
+}
+
+.inputfield {
+  width: 40px;
+  text-align: center;
+}
+
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.animal-image-vertical {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.option {
+  margin: 20px;
+}
+
+.Matching_heading {
+  text-align: center;
+  color: #f66a6a;
+}
+
+
+.match {
+  background-color: #d3ffd3;
+}
+
+.not-match {
+  background-color: #ffddd3;
+}

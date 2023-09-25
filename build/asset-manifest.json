@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18eb0585.css",
+    "main.js": "/static/js/main.e81e9918.js",
+    "static/media/poonams_animation.mp4": "/static/media/poonams_animation.e30bb0d4b0633bf4f27c.mp4",
+    "static/media/poonams_summary.pdf": "/static/media/poonams_summary.36659a61cad5257ef5f3.pdf",
+    "static/media/Kannadascript.pdf": "/static/media/Kannadascript.74b3cf6d3a6104c5728c.pdf",
+    "static/media/Englishscript.pdf": "/static/media/Englishscript.09728c1eac52f80436b0.pdf",
+    "static/media/poonamchart.png": "/static/media/poonamchart.03fed10a9485b33a35d9.png",
+    "static/media/animation1thumbnail.png": "/static/media/animation1thumbnail.d361d4c211c1e45cf033.png",
+    "static/media/onlineeducation.jpg": "/static/media/onlineeducation.565961ffc2d5e19f42d7.jpg",
+    "static/media/poonamdaychart.pdf": "/static/media/poonamdaychart.84c814173737b0144dc8.pdf",
+    "static/media/summary_1.png": "/static/media/summary_1.dba6dbe9ee2e7805ff84.png",
+    "static/media/girl_talk.png": "/static/media/girl_talk.cbda93ecb23ac70174fe.png",
+    "static/media/boylearn.png": "/static/media/boylearn.64b966631d79949dfb38.png",
+    "static/media/WordSearch_GameBonus.mp3": "/static/media/WordSearch_GameBonus.93f2df79eaa65bf79dcd.mp3",
+    "static/media/Quiz_CorrectClapping.mp3": "/static/media/Quiz_CorrectClapping.951c28ce5ba6806c31b7.mp3",
+    "static/media/diet_ramnagara.png": "/static/media/diet_ramnagara.0d2e781e44474248b521.png",
+    "static/media/WordSearch_Win.mp3": "/static/media/WordSearch_Win.37b45d4b4b0828435ef4.mp3",
+    "static/media/correct_bg.jpg": "/static/media/correct_bg.33f94d8e45fcee1d2113.jpg",
+    "static/media/rvce.png": "/static/media/rvce.5e8f25964d23b180df22.png",
+    "static/media/colors.png": "/static/media/colors.5c4fbc3a33079cfe87f3.png",
+    "static/media/Maths_1.avif": "/static/media/Maths_1.a7177141d85b0278bee5.avif",
+    "static/media/WordSearch_Background.webp": "/static/media/WordSearch_Background.fb9cdc48b19cde474ece.webp",
+    "static/media/EVS_3.avif": "/static/media/EVS_3.280abcda4d0ffc1670d9.avif",
+    "static/media/Quiz_WrongNegative.mp3": "/static/media/Quiz_WrongNegative.6b2eb1aa1ffcec110107.mp3",
+    "static/media/English_1.avif": "/static/media/English_1.11e49c59b9191bb6328b.avif",
+    "static/media/loader.gif": "/static/media/loader.1ffc6dc066f6521b03ae.gif",
+    "index.html": "/index.html",
+    "main.18eb0585.css.map": "/static/css/main.18eb0585.css.map",
+    "main.e81e9918.js.map": "/static/js/main.e81e9918.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18eb0585.css",
+    "static/js/main.e81e9918.js"
+  ]
+}

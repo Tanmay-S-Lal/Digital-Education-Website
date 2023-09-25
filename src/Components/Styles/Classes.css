@@ -1,0 +1,61 @@
+.class_container {
+    background:url('https://static.vecteezy.com/system/resources/previews/002/712/290/original/scene-with-many-children-reading-book-in-the-park-free-vector.jpg');
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: auto;
+}
+
+.class_heading {
+    margin: 10px;
+}
+
+.classList {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-block: 40px;
+    margin-inline: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.classCard {
+    padding: 10px;
+    height: 225px;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(to bottom right, #cc66ff 0%, #9900ff 100%);
+    box-shadow: 3px 3px 5px gray;
+}
+
+.classCard:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+}
+
+.classInfo {
+    text-align: justify;
+    margin-inline: 20px;
+    margin-block: 15px;
+}
+
+.buttonRound {
+    border-radius: 50px;
+    box-shadow: 0px 2px 0px rgb(80, 80, 80);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px;
+    margin-inline: 20px;
+}
+.buttonRound:hover {background-color: lightgrey;
+transform: scale(1.1);
+transition: all 0.3s;
+
+}    

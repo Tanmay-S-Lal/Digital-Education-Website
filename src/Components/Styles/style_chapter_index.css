@@ -1,0 +1,67 @@
+.chapterTableContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #ff416e61;
+}
+.chapterTable{
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    width: 80vw;
+    border-radius: 20px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+.chapterTable th ,td{
+    text-align: center;
+    border-bottom:1px solid #ff416e ;
+}
+
+.chapterHead th:nth-child(2){
+    padding: 20px;
+    text-align: left;
+    text-transform:uppercase;
+    border-left:2px solid white ;
+}
+.chapterBody td:nth-child(2){
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.chapterHead th{
+    background-color:#ff416daf ;
+    color: white;
+    text-shadow: 3px 1px 8px black;
+    letter-spacing: 8px;
+}
+.chapterBody td{
+    background-color: hsl(346, 100%, 93%);
+    position: relative;
+}
+.chapterBody td:hover{
+    cursor: pointer;
+    background-color: #ff416d14;
+    color: white;
+    transform: scale(1.02);
+}
+.chapterBody td:nth-child(2):before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.2vw;
+    background-color: #ff416e;
+    transition: all 0.1s ease-in-out;
+}
+
+.chapterBody td:nth-child(2):hover::before{
+    transform: scaleX(300%);
+}

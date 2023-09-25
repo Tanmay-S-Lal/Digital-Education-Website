@@ -1,0 +1,284 @@
+.home_container{
+        
+        padding:1rem;
+        /* margin: 5rem; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+       /* background:url('https://static.vecteezy.com/system/resources/previews/010/617/150/original/illustration-graphic-background-of-space-adventure-with-copyspace-area-suitable-for-children-book-etc-free-vector.jpg'); */
+
+       
+       /* border-radius: 8px; */
+        /* width: fit-content; */
+        height: 31rem;
+
+       /*  background: url('https://img.freepik.com/free-vector/hand-drawn-background-back-school_23-2149509407.jpg?w=826&t=st=1692928448~exp=1692929048~hmac=46a4fc4b78b470a111b0a78e2fb1faf21832fc14e73cca00a17916276ddbce69'); */
+
+       /* background:url('https://www.rappler.com/tachyon/2020/07/distance-learning-20200731.jpg'); */
+
+       /* background: url('https://www.21kschool.com/blog/wp-content/uploads/2022/02/21K-School.jpg'); */
+
+        background: url('https://img.freepik.com/premium-vector/abstract-blue-color-background-design_279539-371.jpg?w=900');
+      
+        background-size: cover;
+        background-position: center;
+        
+        
+        
+        
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.616);
+        
+       
+        
+
+}
+
+.home_contents{
+    /* padding: 2rems; */
+   
+   /* background-color: rgba(255, 255, 255, 0.897); */
+   border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+   /*  margin: 1.5rem; */
+    /* background-color: peachpuff; */
+    
+    /* background-color: blue; */
+    border-radius: 2px;
+    
+    width: calc(50%);
+    z-index:2;
+   /* background-color: rgba(245, 245, 245, 0.449); */
+
+}
+
+.home_contents{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 80px; */
+    /* padding: 1rem; */
+    /* margin-left: 50px; */
+   /*  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.099); */
+   
+}
+
+
+
+.home_contents h1{
+    padding: 1.5px;
+    text-align: center;
+    color:#ff416e;
+   /*  text-shadow: 0px 2px 2px orangered; */
+    font-weight: bolder;
+    font-size: 55px;
+    margin-top: 20px;
+    margin-left: 100px;
+    /* background-color: blue; */
+    
+}
+
+.home_contents p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color:navy;
+    text-align: center;
+    margin-left: 100px;
+    z-index: 999;
+    
+    
+    
+}
+
+span{
+    color: #ff416e;
+}
+
+.home_contents button{
+    margin-top: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.564);
+    
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff416e;
+    padding: 8px;
+    border-radius: 3px;
+    /* box-shadow: 2px black; */
+    cursor: pointer;
+    border: 2px solid #ff416e;
+    margin-left: 100px;
+    
+    /* transition-duration: 2s; */
+}
+
+.home_contents button:hover{
+    background-color: white;
+    color: #ff416e;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.home_image{
+    
+    
+    width: calc(50%); 
+    
+}
+
+.home_image img{
+    margin-left: 70px;
+    
+    
+   
+    height: 480px;
+    
+    
+    
+}
+
+.iconImage{
+        
+        /* margin-left: 0.5px;
+        margin-top: 2rem;
+        margin-bottom: 0rem; */
+        display: flex;
+        flex-direction: row;
+        /* background-color: white; */
+        border-radius: 5px;
+        padding: 0.2rem;
+        /* box-shadow: 0 0.1rem 0.1rem rgba(246, 243, 243, 0.934); */
+
+        /* background-color: whitesmoke; */
+        margin-left: 100px;
+        
+
+}
+
+
+.iconImage img{
+    height:90px ;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.logins{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.teacherlogin{
+    margin-left: 20px;
+}
+
+.about_container{
+    padding:1rem;
+    margin: 1rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.aboutimage{
+    width: calc(32%);
+    /* background-color: green; */
+}
+
+.aboutimage img{
+    height: 380px;
+    width: max-content;
+    
+}
+
+.aboutcontent{
+    width: calc(100%);
+    
+    background-size: initial;
+    
+    padding: 1.5rem;
+    text-align: justify;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.616);
+
+}
+
+.aboutcontent h1{
+    text-align: center;
+    color: #ff416e;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.aboutcontent p{
+    color: black;
+    font-weight: 200;
+    line-height: 2rem;
+    z-index: 1;
+}
+
+.contactcontainer{
+    padding:1rem;
+    margin: 1rem;
+
+}
+
+.contactcontents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactCard{
+    flex: 1;
+    margin: 20px 20px;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.contactimg {
+    height: calc(50%);
+}
+
+.contactimg img{
+    height: 200px;
+}
+
+.eachcontcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eachcontcontent h2{
+    color: #ff416e;
+}
+
+.eachcontcontent p{
+    margin-top: 5px;
+}
+
+.eachcontcontent button{
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #ff416e;
+    border: 2px solid #ff416e;
+    color: white;
+    border-radius: 5px;
+}
+
+.eachcontcontent button:hover{
+    transform: scale(1.1);
+    color: #ff416e;
+    background-color:white;
+}

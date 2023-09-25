@@ -1,0 +1,256 @@
+.chapcontainer{
+    margin: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.chapnavs{
+    display: flex;
+    flex-direction: column;
+    width: calc(30%);
+    background:url('https://img.freepik.com/free-vector/hand-drawn-spring-background_23-2148856637.jpg?w=826&t=st=1691820081~exp=1691820681~hmac=72272444ccf6f0294a37d0a01c7bc837ca2cbeca73d175c4ae34e85c4c7a424e');
+    background-size: cover;
+    padding: 5px;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+}
+
+.chapcontent{
+    margin-left: 10px;
+    width: calc(70%);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    background: url('https://img.freepik.com/free-vector/monkey-forest_1308-24734.jpg?w=900&t=st=1691818863~exp=1691819463~hmac=d1f4e8d60238bd22cda787c3e256312bdcb87c86ddf077e1ab5162fc858fa50f');
+    background-size: cover;
+    height: 500px;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+}
+
+.chapname{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2px;
+}
+
+.contenttitle{
+    background-color: rgba(255, 255, 255, 0.838);
+    color: #f7033c;
+    padding: 10px;
+    margin-top: rem;
+    box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.616);
+    opacity: 2;
+    z-index: 999;
+    
+}
+
+.scripts{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.englishdownload{
+margin-top: 5px;
+background-color: #ff416e;
+padding: 5px;
+color: white;
+border: none;
+border-radius: 5px;
+font-weight: bolder;
+box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+
+}
+
+.englishdownload:hover{
+    border: 2px solid #ff416e;
+    background-color: white;
+    color: #ff416e;
+    font-weight: bolder;
+}
+
+.kannadadownload{
+margin-top: 5px;
+background-color: #ff416e;
+padding: 5px;
+color: white;
+border: none;
+border-radius: 5px;
+font-weight: bolder;
+box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+
+}
+
+.kannadadownload:hover{
+    border: 2px solid #ff416e;
+    background-color: white;
+    color: #ff416e;
+    font-weight: bolder;
+}
+
+.button1{
+    background:url('https://static.vecteezy.com/system/resources/previews/010/917/400/original/gradient-pink-and-pastel-orange-abstract-colorful-simple-cheerful-and-clean-style-suitable-for-copy-space-wallpaper-background-texture-banner-flyer-or-decor-free-vector.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    padding: 2px;
+    text-align: start;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+    
+}
+
+
+
+.list{
+    border-radius: 5px;
+    border-radius: 20px ;
+    
+}
+
+.listitems{
+    margin-top: 5px;
+    padding: 2px;
+    opacity: 999;
+    border-radius: 2.5px;
+    
+   
+    
+    
+    
+}
+
+.listitems button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    justify-content: start;
+    align-items: start;
+    
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    background: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3764.jpg');
+    background-size: cover;
+    margin-top: 2px;
+    
+    
+    
+}
+
+.listitems button:hover{
+    background:url('https://img.rawpixel.com/private/static/images/website/2022-05/rm218batch10-mynt-12.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=15d0e44709d9236f5de5cbe0b8ea489f');
+    color: white;
+    /* transform: scale(1.02); */
+    transition: all 0.2s;
+}
+
+.mainbutton{
+    margin-top: 5px;
+}
+
+.chapheading{
+    color: white;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+    background:url('https://img.rawpixel.com/private/static/images/website/2022-05/rm218batch10-mynt-12.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=15d0e44709d9236f5de5cbe0b8ea489f');
+    text-align: center;
+    padding-top: 5px;
+    font-size: 11px;
+    /* margin-top: 5px; */
+
+}
+
+.upbutton{
+    font-size: 20px;
+}
+
+.elementscontainer{
+
+    margin-top: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgba(255, 255, 255, 0.396);
+    border-radius: 10px;
+    height: fit-content;
+
+
+}
+
+.qrimagescontainer img{box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+    height: 150px;
+    width: 150px;
+    margin: 2rem;
+}
+
+.qrnames {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 2rem; */
+    justify-content: space-around;
+    /* padding-left: 2rem; */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+
+
+}
+
+.qrnames h1{
+    color: #ff416e; 
+}
+
+
+.charts, .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.charts img{
+    height: 300px;
+    width: 700px;
+    margin-top: 2px;
+}
+
+.chartdownload, .summaryDownload{
+   background-color: #ff416e;
+   padding: 5px;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-weight: bolder;
+   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+
+}
+
+.chartdownload:hover, .summaryDownload:hover{
+    border: 2px solid #ff416e;
+    background-color: white;
+    color: #ff416e;
+    font-weight: bolder;
+}
+
+.poonamSummary {
+    height: 300px;
+    width: 700px;
+}

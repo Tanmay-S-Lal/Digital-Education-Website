@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "info":"Welcome to the World of Discovery. Learn, Explore, Enjoy the fun based learning process. Click the below button to start learning.",
+        "color1":"rgb(244, 114, 182) 18%",
+        "color2":"rgb(239, 68, 68) 100%",
+        "link":""
+    },
+    {
+        "id":2,
+        "info":"Welcome to the World of Adventure. Learn, Explore, Enjoy the fun based learning process. Click the below button to start learning.",
+        "color1":"#cc33ff 18%",
+        "color2":"#ff3399 100%",
+        "link":""
+    },
+    {
+        "id":3,
+        "info":"Welcome to the World of Knowledge. Learn, Explore, Enjoy the fun based learning process. Click the below button to start learning.",
+        "color1":"#cc33ff 40%",
+        "color2":"#0000cc 100%",
+        "link":"/class3/subjects"
+    },
+    {
+        "id":4,
+        "info":"Welcome to the World of Success. Learn, Explore, Enjoy the fun based learning process. Click the below button to start learning.",
+        "color1":"#00ccff 18%",
+        "color2":"#0000ff 100%",
+        "link":""
+    }
+]

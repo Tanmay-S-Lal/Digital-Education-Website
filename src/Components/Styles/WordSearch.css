@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+::-webkit-scrollbar{
+    display:block;
+    width:0.25rem;
+    overflow: hidden;
+}
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner{
+    background: transparent;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius:100vw;
+    margin-block: 0.25rem;
+    
+}
+::-webkit-scrollbar-thumb{
+    background: hsla(0, 0%, 57%, 0);
+    border-radius:100vw;
+}
+::-webkit-scrollbar-thumb:active,::-webkit-scrollbar-thumb:hover{
+    background: hsla(0, 0%, 53%, 0.7);
+    border-radius:100vw;
+}
+
+.CrosswordWindow {
+    background: url("../Images/WordSearch_Background.webp") center/cover no-repeat border-box fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    overflow: auto;
+}
+.HeadWrapper{
+    display: inherit;
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+}
+
+.Title {
+    position: absolute;
+    display: inherit;
+    z-index: 0;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255, 80, 92, 0.75);
+    margin: 4vh 0 0 0;
+    text-align: center;
+    height: 6rem;
+    width: 32rem;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.Title p {
+    display:inherit;
+    margin:0 2% 0 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.6rem;
+}
+
+.board {
+    position: absolute;
+    z-index: 4;
+    background: rgba(255, 80, 92, 0.75);
+    overflow: true;
+    display: inline-block;
+    margin: 10rem 0;
+    margin-top: 8rem;
+}
+
+.row {
+    display: block;
+}
+
+.square {
+    background-color: #ffffff;
+    justify-self: center;
+    height: 3.05rem;
+    width: 3.05rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-color: rgb(255, 80, 92);
+    box-shadow: none;
+}
+
+.square button {
+    outline: none;
+}
+
+.Scoreboard {
+    position: relative;
+    display: flexbox;
+    background-color: rgba(255, 80, 92, 0.75);
+    margin: 40vh 0 0 55vw;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.Scoreboard span {
+    position: relative;
+    display: inline-flex;
+    top:17%;
+    left:22%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 0;
+    font-weight: 200;
+}
+
+.Scoreboard span p{
+    text-align: center;
+    color: black;
+    margin-block: 20px;
+    font-weight: bold;
+}
+.remCount {
+    position: absolute;
+    top: -0.5rem;
+    left: -3.3rem;
+}
+
+.Congratulations {
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    height: 1vh;
+    width: 1vw;
+    background-color: #ff445c;
+    opacity: 0;
+    transition: width 1s ease-out, height 1.5s ease-out, opacity 1.5s linear;
+}
+
+
+.Congratulations.show {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.9;
+    z-index: 5;
+}
+
+.ReplayButton {
+    height: 2rem;
+    width: 5rem;
+    background-color: #f5f5f5;
+    border-color: #888888;
+    font: 100 1rem 'Poppins', sans-serif;
+}
+.ListWords{
+    display:inline-block;
+    position:absolute;
+    height:25rem;
+    width:11rem;
+    font: bold 1.5rem 'Poppins', sans-serif;
+    background-color: rgba(255, 80, 92, 0.7);
+    overflow-y:auto;
+    overflow-x:auto;
+    border-radius: 25px;
+    top:26vh;
+    left:16vw;
+}
+.ListWords span{
+    color: black;
+    display: block;
+    margin-block: 18px;
+    text-align: center;
+}

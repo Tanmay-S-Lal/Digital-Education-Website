@@ -1,0 +1,20 @@
+[
+    {
+        "ImgURL": "https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-email-services_516790-1608.jpg?w=740",
+        "h2": "Email",
+        "p": "To reach us through mail, use the below mail address",
+        "button": "abc@gmail.com"
+    },
+    {
+        "ImgURL": "https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-contact-us_516790-177.jpg?w=740",
+        "h2": "Contacts",
+        "p": "To reach us at the fastest, use the below contact number",
+        "button": "+91 8234569809"
+    },
+    {
+        "ImgURL": "https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-chat_516790-225.jpg?w=740",
+        "h2": "Message",
+        "p": "You can reach out to us through messaging also",
+        "button": "sabcad@yahoo.com"
+    }
+]

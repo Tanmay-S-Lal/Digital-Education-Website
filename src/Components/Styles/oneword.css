@@ -1,0 +1,152 @@
+.section{
+    height:100px;
+    margin-top: 0px;
+    background-image: url('https://img.freepik.com/free-vector/dark-wavy-colors-background_23-2148403785.jpg?size=626&ext=jpg&ga=GA1.1.1873050670.1691914218&semt=ais');
+    background-size: cover;
+  }
+  
+  .section h3{
+    color:white;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .template{
+    height:100vh;  
+    font-family: 'Poppins', sans-serif;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url('https://img.freepik.com/free-vector/empty-banner-board-nature-park-scenery_1308-45359.jpg?size=626&ext=jpg&ga=GA1.1.1873050670.1691914218&semt=ais');
+  }
+  
+  
+  .template h3{
+    position: absolute;
+    margin-left: 250px;
+    margin-top:150px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position:absolute;
+    margin-left:250px;
+    margin-top:250px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .answer-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-left:250px;
+    margin-top:200px;
+  }
+  
+  .answer-input:focus {
+    outline: none;
+  }
+
+  .onewordbg{
+    background-image: url('https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees_181624-20615.jpg?size=626&ext=jpg&ga=GA1.1.1873050670.1691914218&semt=ais');
+  }
+
+  .rw{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 250px;
+  }
+  
+  .rw1{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 250px;
+    background-color: red;
+  }
+
+  .topBar{
+    background-color: #ff416e;
+    height:50px;
+    color:white;
+    font-size:10px;
+    padding:10px;
+    box-shadow: 0 3px 2px gray;
+    margin-top: auto;
+  }
+
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position:absolute;
+    margin-left: 350px;
+    margin-top:250px;
+  }
+  
+  .next-button:hover {
+    background-color: #0056b3;
+  }
+
+  .quiz-over-message{
+    text-align: center;
+    padding-top: 220px;
+    font-size: large;
+  }
+
+  .score{
+    margin-left: 800px;
+    padding-top: 100px;
+  }
+
+  .trophy{
+    width: 100px;
+    margin-top: -50px;
+  }
+  
+  .thumbs-up-animation {
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .thumbs-up-icon {
+    font-size: 7rem; /* Adjust the size as needed */
+    color: #00cc00; /* Adjust the color as needed */
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+  }
+
