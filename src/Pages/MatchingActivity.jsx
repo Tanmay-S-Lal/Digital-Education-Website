@@ -22,8 +22,8 @@ function MatchingActivity() {
 
   const shuffledAnimalsRight = shuffleArray([...initialAnimals]);
 
-  const [animalsLeft, setAnimalsLeft] = useState(initialAnimals);
-  const [animalsRight, setAnimalsRight] = useState(shuffledAnimalsRight);
+  const [animalsLeft] = useState(initialAnimals);
+  const [animalsRight] = useState(shuffledAnimalsRight);
   const [matches, setMatches] = useState(new Array(initialAnimals.length).fill(false));
   const [gameOver, setGameOver] = useState(false);
 
