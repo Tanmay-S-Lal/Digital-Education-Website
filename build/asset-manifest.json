@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.18eb0585.css",
-    "main.js": "/static/js/main.adc9068e.js",
+    "main.js": "/static/js/main.42201ed2.js",
     "static/media/poonams_animation.mp4": "/static/media/poonams_animation.e30bb0d4b0633bf4f27c.mp4",
     "static/media/poonams_summary.pdf": "/static/media/poonams_summary.36659a61cad5257ef5f3.pdf",
     "static/media/Kannadascript.pdf": "/static/media/Kannadascript.74b3cf6d3a6104c5728c.pdf",
@@ -28,10 +28,10 @@
     "static/media/loader.gif": "/static/media/loader.1ffc6dc066f6521b03ae.gif",
     "index.html": "/index.html",
     "main.18eb0585.css.map": "/static/css/main.18eb0585.css.map",
-    "main.adc9068e.js.map": "/static/js/main.adc9068e.js.map"
+    "main.42201ed2.js.map": "/static/js/main.42201ed2.js.map"
   },
   "entrypoints": [
     "static/css/main.18eb0585.css",
-    "static/js/main.adc9068e.js"
+    "static/js/main.42201ed2.js"
   ]
 }
