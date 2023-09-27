@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import '../Components/Styles/oneword.css'
 import questionsData from '../Components/jsons/one_word.json'
-import { useSpeechSynthesis } from 'react-speech-kit';
+// import { useSpeechSynthesis } from 'react-speech-kit';
 import clapping from "../Components/sounds/Quiz_CorrectClapping.mp3"
 import negative from "../Components/sounds/Quiz_WrongNegative.mp3"
+import quizCorrectSound from "../Components/sounds/Quiz_ThatsRightUAreCorrect.mp3"
+import quizWrongSound from "../Components/sounds/Quiz_SorryUAreWrong.mp3"
 import { NAVBAR_QUIZ } from './NavBar';
 const Oneword = () => {
     const [givenAns, setGivenAns] = useState('');
     const [correct, setCorrect] = useState({});
-    const { speak } = useSpeechSynthesis();
+    // const { speak } = useSpeechSynthesis();
     const [submitted, setSubmitted] = useState(false);
     const [points, setPoints] = useState(0);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,8 +18,10 @@ const Oneword = () => {
     const [showThumbsDown, setShowThumbsDown] = useState(false);
     const [playClappingMusic, setPlayClappingMusic] = useState(false);
     const [playNegativeMusic, setPlayNegativeMusic] = useState(false);
-    const speakCorrect = "That's right, you are correct";
-    const isWrong = "Sorry, you are wrong";
+    const [playRightMusic, setPlayRightMusic] = useState(false);
+    const [playWrongMusic, setPlayWrongMusic] = useState(false);
+    // const speakCorrect = "That's right, you are correct";
+    // const isWrong = "Sorry, you are wrong";
     const handleChange = (e) => {
         setGivenAns(e.target.value)
     }
@@ -52,13 +56,38 @@ const Oneword = () => {
             }, 2000);
         }
     }, [playNegativeMusic]);
+
+    useEffect(() => {
+        const correctgirl = new Audio(quizCorrectSound)
+        if (playRightMusic) {
+            correctgirl.play();
+            setTimeout(() => {
+                correctgirl.pause();
+                correctgirl.currentTime = 0;
+                setPlayRightMusic(false);
+            }, 2000);
+        }
+    }, [playRightMusic]);
+    
+    useEffect(() => {
+        const wronggirl = new Audio(quizWrongSound)
+        if (playWrongMusic) {
+            wronggirl.play();
+            setTimeout(() => {
+                wronggirl.pause();
+                wronggirl.currentTime = 0;
+                setPlayWrongMusic(false);
+            }, 2000);
+        }
+    }, [playWrongMusic]);
+
     const handleSubmit = (param1, param2, points) => {
         const userInput = givenAns.toLowerCase();
         const correctAnswer = param1.toLowerCase();
         if (userInput === correctAnswer) {
             console.log("true");
 
-            speak({ text: speakCorrect });
+            // speak({ text: speakCorrect });
             setCorrect(prevCorrect => ({
                 ...prevCorrect,
                 [param2]: true,
@@ -68,7 +97,8 @@ const Oneword = () => {
             setTimeout(() => {
                 setShowThumbsUp(false);
             }, 2000); 
-            setPlayClappingMusic(true);        
+            setPlayClappingMusic(true);
+            setPlayRightMusic(true);        
         }
         else if (givenAns === '') {
             return
@@ -76,7 +106,7 @@ const Oneword = () => {
         else {
             console.log('false');
 
-            speak({ text: isWrong });
+            // speak({ text: isWrong });
             setCorrect(prevCorrect => ({
                 ...prevCorrect,
                 [param2]: false,
@@ -86,6 +116,7 @@ const Oneword = () => {
                 setShowThumbsDown(false);
             }, 2000); 
             setPlayNegativeMusic(true);
+            setPlayWrongMusic(true)
         }
         setSubmitted(true);
     }

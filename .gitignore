@@ -1,1 +1,5 @@
+# exclude node modules
 node_modules
+
+# exclude .env.local file
+.env.local
