@@ -61,8 +61,8 @@ function Contentcontainer(props){
             </div> 
 
             <div className="scripts">
-            <a href={english} download={true}><button className="englishdownload">English script<AiOutlineDownload/></button></a>
-            <a href={kannada} download={true}><button className="kannadadownload">ಕನ್ನಡ ಲಿಪಿಗಳು<AiOutlineDownload/></button></a>
+            <a href={english} download={true}><button className="englishdownload">English transcript <AiOutlineDownload/></button></a>
+            <a href={kannada} download={true}><button className="kannadadownload">ಕನ್ನಡ ಪ್ರತಿಲಿಪಿ <AiOutlineDownload/></button></a>
             </div>
 
             </div>

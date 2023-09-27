@@ -1,10 +1,11 @@
 import React, { useState, useEffect ,useRef} from 'react';
 import '../Components/Styles/WordSearch.css';
-import winSound from '../Components/sounds/WordSearch_Win.mp3';
+import winSound from '../Components/sounds/WordSearch_Win.wav';
 import correctSound from '../Components/sounds/WordSearch_GameBonus.mp3';
 import { NAVBAR_ACTIVITY } from './NavBar';
 const gridSize = 10;
-const words = ["monkey", "owl", "frog", "spider", "tortoise", "snail", "dog"];
+const words = ["monkey", "owl", "frog", "spider", "tortoise", "snail","dog"];
+
 
 const oriented = {
   NONE: 0,
@@ -42,12 +43,12 @@ class Crossword {
         const x = Math.floor(Math.random() * gridSize);
         const y = Math.floor(Math.random() * gridSize);
 
-        if (this.isPossibleDiagonal(x, y, index - 1)) {
-          this.wordPlace(x, y, index - 1, oriented.Z);
+        if (this.isPossibleVertical(x, y, index - 1)) {
+          this.wordPlace(x, y, index - 1, oriented.Y);
           isPlaced = true;
           this.inCrossword[index - 1] = true;
-        } else if (this.isPossibleVertical(x, y, index - 1)) {
-          this.wordPlace(x, y, index - 1, oriented.Y);
+        } else if (this.isPossibleDiagonal(x, y, index - 1)) {
+          this.wordPlace(x, y, index - 1, oriented.Z);
           isPlaced = true;
           this.inCrossword[index - 1] = true;
         } else if (this.isPossibleHorizontal(x, y, index - 1)) {
@@ -173,10 +174,10 @@ function CongratsTab({showCongratulations}) {
 
   return (
     <span className={`Congratulations ${showCongratulations? 'show':''}`} >
-      <p style={{ font: "italic bold 4rem 'Poppins', sans-serif", textAlign: "center" ,justifyContent:"center",margin:"40vh 0 0 0 "}}>
-        Great Bounty, Sire
+      <p>
+        Great Job, Sire
       </p>
-      <p style={{ font: "bold 1.25rem 'Poppins', sans-serif",textAlign: "center" ,justifyContent:"center", margin: "1vh 0 0 0" }}>
+      <p>
         <button onClick={() => window.location.reload()} className="ReplayButton">Replay</button>
       </p>
     </span>
@@ -203,6 +204,35 @@ function WordListTab({genWordList}){
     ))}
     </div>
   );
+}
+function TitleNScore({genWordList,remainingWords})
+{
+  return(
+        <div className="HeadWrapper">
+          <div className="Title" >
+            <p>WordSearch(Animals)</p>
+          </div>
+          <div className="Scoreboard">
+            <span>
+              <p>To Find</p>
+              <p className = "remCount" id="remCount">{remainingWords}</p>
+            </span>
+          </div>
+          <WordListTab genWordList={genWordList}/>
+        </div>
+  )
+}
+function GameAudio({audioRef,audioRef2}){
+    return (
+      <>
+        <audio ref={audioRef2}>
+          <source src={correctSound} type="audio/mpeg" />
+        </audio>
+        <audio ref={audioRef}>
+          <source src={winSound} type="audio/mpeg" />
+        </audio>
+      </>
+    );
 }
 
 
@@ -304,32 +334,17 @@ export default function WordSearch() {
       setWordList(WordList + selection.innerHTML);
     }
   }
-  
-  
 
   return (
     <>
       <NAVBAR_ACTIVITY/>
       <div className="CrosswordWindow" id="CrosswordWindow">
         <CongratsTab  showCongratulations={showCongratulations}/>
-        <div className="HeadWrapper">
-          <div className="Title" >
-            <p>WordSearch(Animals)</p>
-          </div>
-          <div className="Scoreboard">
-            <span><p>To Find</p></span>
-            <span><p className = "remCount" id="remCount">{remainingWords}</p></span>
-          </div>
-          <WordListTab genWordList={genWordList}/>
-        </div>
+        <TitleNScore genWordList={genWordList} remainingWords={remainingWords}/>
         <Board crossword={_Crossword} onSquareClick={handleClick} />
       </div>
-      <audio ref={audioRef2}>
-        <source src={correctSound} type="audio/mpeg" />
-      </audio>
-      <audio ref={audioRef}>
-        <source src={winSound} type="audio/mpeg" />
-      </audio>
+      <GameAudio audioRef={audioRef} audioRef2={audioRef2}/>
     </>
   );
 }
+
