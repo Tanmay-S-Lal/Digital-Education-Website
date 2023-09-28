@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a8adbe7.css",
-    "main.js": "/static/js/main.19fcb1f5.js",
+    "main.css": "/static/css/main.410aeee7.css",
+    "main.js": "/static/js/main.d204584b.js",
     "static/media/poonams_animation.mp4": "/static/media/poonams_animation.e30bb0d4b0633bf4f27c.mp4",
     "static/media/poonams_summary.pdf": "/static/media/poonams_summary.36659a61cad5257ef5f3.pdf",
     "static/media/Kannadascript.pdf": "/static/media/Kannadascript.74b3cf6d3a6104c5728c.pdf",
@@ -29,11 +29,11 @@
     "static/media/Quiz_ThatsRightUAreCorrect.mp3": "/static/media/Quiz_ThatsRightUAreCorrect.100aeb99c4b16a5768b1.mp3",
     "static/media/Quiz_SorryUAreWrong.mp3": "/static/media/Quiz_SorryUAreWrong.58fbb3314db990901f7b.mp3",
     "index.html": "/index.html",
-    "main.1a8adbe7.css.map": "/static/css/main.1a8adbe7.css.map",
-    "main.19fcb1f5.js.map": "/static/js/main.19fcb1f5.js.map"
+    "main.410aeee7.css.map": "/static/css/main.410aeee7.css.map",
+    "main.d204584b.js.map": "/static/js/main.d204584b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a8adbe7.css",
-    "static/js/main.19fcb1f5.js"
+    "static/css/main.410aeee7.css",
+    "static/js/main.d204584b.js"
   ]
 }

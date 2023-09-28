@@ -35,7 +35,7 @@ const OddOneOut = () => {
 	const handleNextQuestion = () => {
         if (submitted) {
             setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-            
+            document.querySelectorAll('input[type="radio"]').forEach(input => input.checked = false);
 			selectedOption(null);
             isCorrect({});
             setSubmitted(false);
@@ -90,7 +90,6 @@ const OddOneOut = () => {
     }, [playWrongMusic]);
 
 	const handleSubmit = (param1,param2,param3) => {
-		setSubmitted(true);
 		if (param1 === option)
 		{	console.log("true");
 		
@@ -127,7 +126,7 @@ const OddOneOut = () => {
             setPlayNegativeMusic(true);
 			setPlayWrongMusic(true);
 		}
-			
+		setSubmitted(true);
 	};
 	
 	return (
@@ -146,13 +145,13 @@ const OddOneOut = () => {
 						<div className="formi">
 						<div className='form2'>
 							<label>
-								<input type="radio" value="option1" name="ans" onChange={handleOptionChange} />
+								<input type="radio" value="option1" name="ans" onChange={handleOptionChange} disabled={submitted}/>
 								<h3 className='correct-h3'>{questions[currentQuestionIndex].option1}</h3>
 								<div><img src={questions[currentQuestionIndex]?.option1_url} alt="" style={{ width: "30%"}} /></div>
 							</label>
 							
 							<label>
-								<input type="radio" value="option2" name='ans' onChange={handleOptionChange} />
+								<input type="radio" value="option2" name='ans' onChange={handleOptionChange} disabled={submitted}/>
 								<h3 className='correct-h3'>{questions[currentQuestionIndex].option2}</h3>
 								<div><img src={questions[currentQuestionIndex]?.option2_url} alt="" style={{ width: "30%"}} /></div>
 							</label>
@@ -160,12 +159,12 @@ const OddOneOut = () => {
 							
 						<div className='form2'>
 							<label>
-								<input type="radio" value="option3" name='ans' onChange={handleOptionChange} />
+								<input type="radio" value="option3" name='ans' onChange={handleOptionChange} disabled={submitted}/>
 								<h3 className='correct-h3'>{questions[currentQuestionIndex].option3}</h3>
 								<div><img src={questions[currentQuestionIndex]?.option3_url} alt="" style={{ width: "30%"}} /></div>
 							</label>
 							<label>
-								<input type="radio" value="option4" name='ans' onChange={handleOptionChange} />
+								<input type="radio" value="option4" name='ans' onChange={handleOptionChange} disabled={submitted}/>
 								<h3 className='correct-h3'>{questions[currentQuestionIndex].option4}</h3>
 								<div><img src={questions[currentQuestionIndex]?.option4_url} alt="" style={{ width: "30%"}} /></div>
 							</label>
@@ -180,7 +179,7 @@ const OddOneOut = () => {
 						</div>
 						<div>
 							{(correct[questions[currentQuestionIndex]?.id]===true) && <div style={{display:"flex",margin:"10px", justifyContent:"center",alignItems:'center',fontSize:'1.5rem', color:'black',backgroundColor:"lightgreen"}}>You are right!<br/>{questions[currentQuestionIndex].reason}</div>}
-							{(correct[questions[currentQuestionIndex]?.id]===false) && <div style={{display:"flex",margin:"10px", justifyContent:"center",alignItems:'center',fontSize:'1.5rem', color:'black',backgroundColor:"red"}}>Sorry, you are wrong!</div>}
+							{(correct[questions[currentQuestionIndex]?.id]===false) && <div style={{display:"flex",margin:"10px", justifyContent:"center",alignItems:'center',fontSize:'1.5rem', color:'black',backgroundColor:"red"}}>Sorry, you are wrong!<br/>{questions[currentQuestionIndex].reason}</div>}
 							</div>
 							
 						<h2 className="score2">Points: {points}</h2>
