@@ -12,19 +12,14 @@
     width: 600px;
     background-color: white;
     height: 100px;
-    overflow: hidden;
+    padding-inline: 5px;
+    overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 10px;
     box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
     
  }
 
- .scroll-object{
-    color: #ff416e;
-    font-size: 36px;
-    overflow-y: scroll;
-
- }
  .transcriptheading{
     font-size: 15px;
     color: #ff416e;
