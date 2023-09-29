@@ -5,19 +5,24 @@ import bear from '../Images/Bear.png'
 import penguin from '../Images/Penguin.png'
 import tiger from '../Images/Tiger.png'
 import poonamchart from '../Images/poonamchart.png'
+// import poonamchart_Kannada from '../Images/PoonamChart_Kannada.jpg'
 import poonamdaypdf from '../Docs/poonamdaychart.pdf'
+import poonamday_Kannadapdf from '../Docs/PoonamChart_Kannada.pdf'
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
 import PoonamAnimation from "../Videos/poonams_animation.mp4";
 import animation1thumbnail from "../Images/animation1thumbnail.png";
 import poonamsSummary from "../Docs/poonams_summary.pdf";
 import summary1 from "../Images/summary_1.png";
-import english from '../Docs/Englishscript.pdf'
-import kannada from '../Docs/Kannadascript.pdf'
+// import english from '../Docs/Englishscript.pdf';
+// import kannada from '../Docs/Kannadascript.pdf';
+import Transcripts from "./Transcripts.jsx";
+
 
 function Contentcontainer(props){
     const navigate = useNavigate();
-
+    const [selectedLanguage] = useState("english");
+    const [transcript, setTranscript] = useState();
     // const [isOpen,setIsOpen] = useState(false)
     // const [isOpen1,setIsOpen1] = useState(false)
     // const [isOpen2,setIsOpen2] = useState(false)
@@ -41,52 +46,63 @@ function Contentcontainer(props){
                 <img src={penguin} alt="" />
                 <img src={tiger} alt="" />
             </div>
-        })
+        });
+        setTranscript(() => {});
 
     }
 
     function handleanimation() {
        
-        setchapcont('Animation')
+        setchapcont(selectedLanguage === 'english' ? 'Animation' : 'ಅನಿಮೇಷನ್');
         setattributes(()=>{
-        return <div className="animationcontainer">
-            <div className="animation">
-                <ReactPlayer
-                light={animation1thumbnail}
-                controls={true}
-                url={PoonamAnimation}
-                height="250px"
-                width="600px"
-                />
-            </div> 
+            return (
+                <div className="animationcontainer">
+                    <div className="animation">
+                        <ReactPlayer
+                            light={animation1thumbnail}
+                            controls={true}
+                            url={PoonamAnimation}
+                            height="200px"
+                            width="400px"
+                        />
+                    </div> 
+                    
+                    {/* <div className="scripts">
+                        <a href={english} download={true}><button className="englishdownload">English transcript <AiOutlineDownload/></button></a>
+                        <a href={kannada} download={true}><button className="kannadadownload">ಕನ್ನಡ ಪ್ರತಿಲಿಪಿ <AiOutlineDownload/></button></a>
+                    </div> */}
 
-            <div className="scripts">
-            <a href={english} download={true}><button className="englishdownload">English transcript <AiOutlineDownload/></button></a>
-            <a href={kannada} download={true}><button className="kannadadownload">ಕನ್ನಡ ಪ್ರತಿಲಿಪಿ <AiOutlineDownload/></button></a>
-            </div>
-
-            </div>
-        })
+                </div>
+            );
+        });
+        setTranscript(() => {
+            return <div><Transcripts /></div>;
+        });
     }
 
     function handlequiz(){
-        navigate("/class3/EVS/chapter1/Quiz")
+        navigate("/class3/EVS/chapter1/Quiz");
+        setTranscript(() => {});
         
     }
 
     // function handleactivity(){
     //     setchapcont('Activity')
     // }
-
+    
     function handleCharts(){
-
+        
         setchapcont('Charts')
         setattributes(()=>{
             return <div className="charts">
-                <img className="poonamchart"src={poonamchart} alt="" />
-                <a href={poonamdaypdf} download={true}><button className="chartdownload">Click here to download <AiOutlineDownload/></button></a>  
+                <img className="poonamchart" src={poonamchart} alt="" />
+                <div className="chartOptions">
+                    <a href={poonamdaypdf} download={true}><button className="chartdownload">English Chart <AiOutlineDownload/></button></a>  
+                    <a href={poonamday_Kannadapdf} download={true}><button className="chartdownload">ಕನ್ನಡ ಚಾರ್ಟ್ <AiOutlineDownload/></button></a>  
+                </div>
             </div>
-        })
+        });
+        setTranscript(() => {});
     }
 
     function handleSummary(){
@@ -97,7 +113,8 @@ function Contentcontainer(props){
                 <img className="poonamSummary"src={summary1} alt="" />
                 <a href={poonamsSummary} download={true}><button className="summaryDownload">Click here to download <AiOutlineDownload/></button></a>  
             </div>
-        })
+        });
+        setTranscript(() => {});
 
     }
     
@@ -153,6 +170,7 @@ function Contentcontainer(props){
                     <div className="chapname">
                         <h1 className="contenttitle">{chapcont}</h1>
                         <div className="elementscontainer">{attributes}</div>
+                        <div className="transcriptcontainer">{transcript}</div>
                     </div>
                 </div>
 

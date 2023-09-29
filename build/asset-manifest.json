@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.410aeee7.css",
-    "main.js": "/static/js/main.d204584b.js",
+    "main.css": "/static/css/main.8c78b7e9.css",
+    "main.js": "/static/js/main.7c3b86f7.js",
     "static/media/poonams_animation.mp4": "/static/media/poonams_animation.e30bb0d4b0633bf4f27c.mp4",
     "static/media/poonams_summary.pdf": "/static/media/poonams_summary.36659a61cad5257ef5f3.pdf",
-    "static/media/Kannadascript.pdf": "/static/media/Kannadascript.74b3cf6d3a6104c5728c.pdf",
-    "static/media/Englishscript.pdf": "/static/media/Englishscript.09728c1eac52f80436b0.pdf",
     "static/media/poonamchart.png": "/static/media/poonamchart.03fed10a9485b33a35d9.png",
     "static/media/animation1thumbnail.png": "/static/media/animation1thumbnail.d361d4c211c1e45cf033.png",
     "static/media/WordSearch_Win.wav": "/static/media/WordSearch_Win.37dbbf52e937e52facf6.wav",
     "static/media/onlineeducation.jpg": "/static/media/onlineeducation.565961ffc2d5e19f42d7.jpg",
     "static/media/poonamdaychart.pdf": "/static/media/poonamdaychart.84c814173737b0144dc8.pdf",
+    "static/media/PoonamChart_Kannada.pdf": "/static/media/PoonamChart_Kannada.1c0586a271b656b92721.pdf",
     "static/media/summary_1.png": "/static/media/summary_1.dba6dbe9ee2e7805ff84.png",
     "static/media/girl_talk.png": "/static/media/girl_talk.cbda93ecb23ac70174fe.png",
     "static/media/boylearn.png": "/static/media/boylearn.64b966631d79949dfb38.png",
@@ -29,11 +28,11 @@
     "static/media/Quiz_ThatsRightUAreCorrect.mp3": "/static/media/Quiz_ThatsRightUAreCorrect.100aeb99c4b16a5768b1.mp3",
     "static/media/Quiz_SorryUAreWrong.mp3": "/static/media/Quiz_SorryUAreWrong.58fbb3314db990901f7b.mp3",
     "index.html": "/index.html",
-    "main.410aeee7.css.map": "/static/css/main.410aeee7.css.map",
-    "main.d204584b.js.map": "/static/js/main.d204584b.js.map"
+    "main.8c78b7e9.css.map": "/static/css/main.8c78b7e9.css.map",
+    "main.7c3b86f7.js.map": "/static/js/main.7c3b86f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.410aeee7.css",
-    "static/js/main.d204584b.js"
+    "static/css/main.8c78b7e9.css",
+    "static/js/main.7c3b86f7.js"
   ]
 }

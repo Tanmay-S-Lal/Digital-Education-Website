@@ -232,14 +232,20 @@ box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
     margin-top: 2px;
 }
 
+.chartOptions {
+    display: flex;
+    gap: 3rem;
+}
+
 .chartdownload, .summaryDownload{
-   background-color: #ff416e;
-   padding: 5px;
-   color: white;
-   border: none;
-   border-radius: 5px;
-   font-weight: bolder;
-   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
+    background-color: #ff416e;
+    padding-block: 5px;
+    padding-inline: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.616);
 
 }
 
